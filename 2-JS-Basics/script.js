@@ -137,7 +137,7 @@ if (benScore > johnScore && benScore > andrewScore) {
 } else if (andrewScore > benScore && andrewScore > johnScore) {
     console.log('Andrew wins with a score of ' + andrewScore);
 } else if (benScore === andrewScore && benScore === johnScore) {
-    console.log('its a tie');
+    console.log('its a three way tie');
 }
 
 console.log(benScore, johnScore, andrewScore);
