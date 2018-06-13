@@ -117,7 +117,7 @@ switch (job) {
 */
 
 // coding challenge 1
-
+/**
 var johnHeight = 72;
 var benHeight = 74;
 var andrewHeight = 68;
@@ -141,8 +141,52 @@ if (benScore > johnScore && benScore > andrewScore) {
 }
 
 console.log(benScore, johnScore, andrewScore);
+*/
 
+// lecture: functions
+/**
+function calculateAge(yearOfBirth) {
+    var age = 2018 - yearOfBirth;
+    return age;
+}
 
+var ageBen = calculateAge(1985);
+var ageDave = calculateAge(1987);
+var ageAndrew = calculateAge(1973);
 
+function yearsUntilRetirement(name, year) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
 
+    if (retirement >= 0) {
+        console.log(name + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(name + ' has already retired.');
+    }
+}
 
+yearsUntilRetirement('Ben', 1985);
+yearsUntilRetirement('Andrew', 1978);
+yearsUntilRetirement('Mary', 1960);
+*/
+
+// lecture: statements and expressions
+
+//statement performs an action
+function someFunction(parameter) {
+    //code goes here
+}
+
+//expression produces a value/outcome
+var someFunction = function (parameter) {
+    //code goes here
+};
+
+//statements
+if (x === 5) {
+    //do something
+}
+
+//expressions
+3 + 4;
+var x = 3;
