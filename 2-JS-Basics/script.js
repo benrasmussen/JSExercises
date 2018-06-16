@@ -172,7 +172,7 @@ yearsUntilRetirement('Mary', 1960);
 
 // lecture: statements and expressions
 
-//statement performs an action
+//statement performs an action but does not produce an immediate value/outcome
 function someFunction(parameter) {
     //code goes here
 }
@@ -190,4 +190,27 @@ if (x === 5) {
 //expressions//
 3 + 4;
 var x = 3;
+
+
+// lecture: arrays
+
+var names = ['John', 'Jane', 'Mark'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[2]);
+names[1] = 'Ben';
+
+console.log(names);
+console.log(years);
+
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue'); //adds to the end of an array
+john.unshift('Mr.'); // adds to the beginning of an array
+john.pop(); //takes away the last index of an array
+john.shift(); //takes away the first index of an array
+
+console.log(john);
+
+alert(john.indexOf('Smith'));
 
