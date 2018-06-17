@@ -310,7 +310,11 @@ for (var i = 0; i <= 9; i += 1) {
 
 var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 
-for (var i = 0; i < 5; i+=1) {
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+for (var i = names.length -1; i >= 0;  i-= 1) {
     console.log(names[i]);
 }
 
