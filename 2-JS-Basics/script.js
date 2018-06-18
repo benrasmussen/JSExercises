@@ -304,6 +304,7 @@ console.log(mike);
 
 //lecture: loops
 
+/**
 for (var i = 0; i <= 9; i += 1) {
     console.log(i);
 }
@@ -317,3 +318,37 @@ for (var i = 0; i < names.length; i++) {
 for (var i = names.length -1; i >= 0;  i-= 1) {
     console.log(names[i]);
 }
+*/
+
+// while loops
+var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+
+var i = 0;
+while (i < names.length) {
+    console.log(names[i]);
+    i++
+}
+
+for (var i = 1; i <= 5; i++) {
+    console.log(i);
+    if (i===3) {
+        break;
+    }
+}
+
+for (var i=1; i<=5; i++) {
+    if (i===3) {
+        continue;
+    }
+    console.log(i)
+}
+
+//coding challenge 2
+
+var birthYears = [1983, 1985, 1987, 1990, 1992];
+var age = [];
+for (var i = 0; i <= age.length ; i++) {
+    e
+}
+
+
