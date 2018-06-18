@@ -345,10 +345,26 @@ for (var i=1; i<=5; i++) {
 
 //coding challenge 2
 
-var birthYears = [1983, 1985, 1987, 1990, 1992];
-var age = [];
-for (var i = 0; i <= age.length ; i++) {
-    e
+var birthYear = [1983, 1985, 1987, 2001, 2002];
+var ageArray = [];
+
+function ageOfPersons(yearOfBirth){
+    age = 2018 - yearOfBirth;
+    return age;
+}
+ageOfPersons();
+
+for (var i = 0; i <= birthYear.length -1; i += 1) {
+    var actualAge = ageOfPersons(birthYear[i]);
+    ageArray.push(actualAge);
+    console.log(actualAge);
+    console.log(ageArray);
+
+    if (actualAge >= 18) {
+        console.log(actualAge + ' full age!')
+    } else {
+        console.log(actualAge + ' NOT full age')
+    }
 }
 
 
