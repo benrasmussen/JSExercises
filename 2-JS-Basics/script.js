@@ -321,6 +321,7 @@ for (var i = names.length -1; i >= 0;  i-= 1) {
 */
 
 // while loops
+/**
 var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 
 var i = 0;
@@ -342,28 +343,22 @@ for (var i=1; i<=5; i++) {
     }
     console.log(i)
 }
+*/
 
 //coding challenge 2
 
 var birthYear = [1983, 1985, 1987, 2001, 2002];
-var ageArray = [];
+var ages = [];
 
-function ageOfPersons(yearOfBirth){
-    age = 2018 - yearOfBirth;
-    return age;
+for (var i = 0; i < birthYear.length; i += 1) {
+    ages[i] = 2018 - birthYear[i];
 }
-ageOfPersons();
 
-for (var i = 0; i <= birthYear.length -1; i += 1) {
-    var actualAge = ageOfPersons(birthYear[i]);
-    ageArray.push(actualAge);
-    console.log(actualAge);
-    console.log(ageArray);
-
-    if (actualAge >= 18) {
-        console.log(actualAge + ' full age!')
+for (i = 0; i < ages.length; i += 1) {
+    if (ages[i] >= 18) {
+        console.log('person ' + i + ' is over 18: ' + ages[i]);
     } else {
-        console.log(actualAge + ' NOT full age')
+        console.log('person ' + i + ' is under 18: ' + ages[i])
     }
 }
 
