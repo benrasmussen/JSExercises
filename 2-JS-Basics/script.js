@@ -345,7 +345,7 @@ for (var i=1; i<=5; i++) {
 }
 */
 
-//coding challenge 2
+//coding challenge 2//
 
 var birthYear = [1983, 1985, 1987, 2001, 2002];
 var ages = [];
